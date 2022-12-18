@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import MainLayout from '../ui/templates/MainLayout/MainLayout'
+import Auth from '../ui/pages/Auth/Auth'
+import React, { FC } from 'react';
 
-function App() {
+const App: FC = () => {
+    return (
+        <MainLayout>
+            <Auth />
+        </MainLayout>
+    );
+};
 
-  return (
-    <div className="App">
-      
-    </div>
-  )
-}
-
-export default App
+export default App;
